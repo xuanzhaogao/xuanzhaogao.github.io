@@ -4,15 +4,8 @@
 # Greetings!
 
 I am Xuanzhao Gao, a research fellow at the Flatiron Institute, Center for Computational Mathematics.
-This is my personal website, hope you enjoy!
-
-# About Me
-
-I received my PhD degree from the Hong Kong University of Science and Technology. My research interests include computational physics, application mathematics, and high-performance computing. I am currently working on the development of fast algorithms for kernel summation problems and tensor network contraction problems.
-
-My Google Scholar profile can be found [here](https://scholar.google.com/citations?hl=en&user=ScbYSkgAAAAJ), and my github can be found [here](https://github.com/ArrogantGao).
-
-My PhD thesis is titled with "Confined Quasi-2D Coulomb Systems: Theory, Algorithms and Applications", and can be found [here](https://raw.githubusercontent.com/ArrogantGao/my_presentations/main/articles/thesis.pdf).
+This is my blog website, hope you enjoy!
+If you want to know more about me, please visit my [personal website](https://users.flatironinstitute.org/~xgao1/).
 
 # Blogs
 
@@ -33,36 +26,3 @@ My PhD thesis is titled with "Confined Quasi-2D Coulomb Systems: Theory, Algorit
 * [How to install slurm on Ubuntu 22.04](/blogs/slurm/)
 
   This blog is a technical note for the installation of slurm on Ubuntu 22.04 with NIS and apt tools.
-
-# Open Source Packages
-
-* [CuTropicalGEMM.jl](https://github.com/TensorBFS/CuTropicalGEMM.jl): A Julia package to speed up the generic matrix multiplication of Tropical Numbers using GPU.
-* [ExTinyMD.jl](https://github.com/HPMolSim/ExTinyMD.jl): A simple but fast molecular dynamic framework in Julia.
-* [ChebParticleMesh.jl](https://github.com/HPMolSim/ChebParticleMesh.jl): A Julia package to calculate the electrostatic potential of charged systems using Chebyshev interpolation (very similar to NUFFT).
-* [TreeWidthSolver.jl](https://github.com/ArrogantGao/TreeWidthSolver.jl): A Julia package to solve tree decomposition with minimal treewidth of a given simple graph.
-* [EwaldSummations.jl](https://github.com/HPMolSim/EwaldSummations.jl): A Julia package to calculate the electrostatic potential of charged systems using Ewald summation.
-* [OptimalBranching.jl](https://github.com/ArrogantGao/OptimalBranching.jl): A Julia package to find the optimal branching rules for the maximum independent set problem.
-
-
-# Publications
-
-* Zecheng Gan, **Xuanzhao Gao**, Jiuyang Liang, and Zhenli Xu. [Fast Algorithm for Quasi-2D Coulomb Systems](https://doi.org/10.1016/j.jcp.2025.113733). Journal of Computational Physics, Volume 524, 1 March 2025, 113733
-
-* **Xuanzhao Gao**, Xiaofeng Li, Jinguo Liu, and Zhenli Xu. [Programming guide for solving constraint satisfaction problems with tensor networks](https://arxiv.org/abs/2501.00227). arXiv, December, 2024.
-
-* **Xuanzhao Gao**, Yi-Jia Wang, Pan Zhang, and Jin-Guo Liu. [Automated Discovery of Branching Rules with Optimal Complexity for the Maximum Independent Set Problem](https://arxiv.org/abs/2412.07685). arXiv, December, 2024.
-
-* **Xuanzhao Gao**, Shidong Jiang, Jiuyang Liang, Zhenli Xu, and Qi Zhou. [A fast spectral sum-of-Gaussians method for electrostatic summation in quasi-2D systems](http://arxiv.org/abs/2412.04595). arXiv, December, 2024.
-
-* Zecheng Gan, **Xuanzhao Gao**, Jiuyang Liang, and Zhenli Xu. [Random Batch Ewald Method for Dielectrically Confined Coulomb Systems](http://arxiv.org/abs/2405.06333). arXiv, May 10, 2024.
-
-* Roa-Villescas Martin, **Xuanzhao Gao**, Sander Stuijk, Henk Corporaal, and Jin-Guo Liu. [Probabilistic Inference in the Era of Tensor Networks and Differential Programming](https://doi.org/10.1103/PhysRevResearch.6.033261.) Physical Review Research 6, no. 3 (September 6, 2024): 033261. 
-
-* **XuanzhaoGao**, and Zecheng Gan. [Broken Symmetries in Quasi-2D Charged Systems via Negative Dielectric Confinement](https://doi.org/10.1063/5.0214523). The Journal of Chemical Physics 161, no. 1 (July 7, 2024): 011102.
-
-# Talks
-
-* [*Fast Summation Algorithms and Tensor Network Methods for Scientific Applications*](https://raw.githubusercontent.com/ArrogantGao/my_presentations/main/pre/sog_ob.pdf), Postdoc job talk at Flatiron Institute, Center for Computational Mathematics, online.
-* [*How to Implement Generic Matrix-Mul with Generic Element Types on GPU?*](https://raw.githubusercontent.com/ArrogantGao/my_presentations/main/pre/CuTropicalGEMM.pdf), JuliaCN Meetup 2023, Shenzhen, China.
-* [*A Fast Algorithm for Quasi-2D Coulomb systems*](https://raw.githubusercontent.com/ArrogantGao/my_presentations/main/pre/fast_algorithm_for_q2d_coulomb_systems.pdf), Scicade 2024, Tokyo, Japan.
-* [*TreeWidthSolver.jl: From Treewidth to Tensor Network Contraction Order*](https://raw.githubusercontent.com/ArrogantGao/my_presentations/main/pre/treewidth.pdf), JuliaCN Meetup 2024, Guangzhou, China.
