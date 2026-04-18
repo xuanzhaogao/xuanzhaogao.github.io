@@ -304,7 +304,7 @@ For the boundary elements, a padding strategy is used, we simply set the element
 
 #### Benchmark
 
-Further benchmarking is still in development, and will be uoloaded to this repo [CuTropicalGEMM_benchmark](https://github.com/ArrogantGao/CuTropicalGEMM_benchmark).
+Further benchmarking is still in development, and will be uoloaded to this repo [CuTropicalGEMM_benchmark](https://github.com/xuanzhaogao/CuTropicalGEMM_benchmark).
 
 ## Open Source Promotion Plan
 

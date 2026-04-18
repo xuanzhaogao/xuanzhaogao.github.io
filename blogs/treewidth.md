@@ -9,7 +9,7 @@ tags = ["syntax", "code"]
 
 # Finding the Optimal Tree Decomposition with Minimal Treewidth
 
-This blog is a supplementary for the note [Tensor Network Contraction Order Optimization with Exact Tree Width Solver](/blogs/contractionorder/), where I detailed introduce the algorithm to find the optimal tree decomposition with minimal treewidth of a given simple graph, and how it is implemented in Julia package [TreeWidthSolver.jl](https://github.com/ArrogantGao/TreeWidthSolver.jl).
+This blog is a supplementary for the note [Tensor Network Contraction Order Optimization with Exact Tree Width Solver](/blogs/contractionorder/), where I detailed introduce the algorithm to find the optimal tree decomposition with minimal treewidth of a given simple graph, and how it is implemented in Julia package [TreeWidthSolver.jl](https://github.com/xuanzhaogao/TreeWidthSolver.jl).
 
 The following is the outline of this blog:
 * Tree width and tree decomposition
@@ -181,7 +181,7 @@ Using the BT algorithm, one can calculate the treewidth of a graph exactly, and 
 
 ## A Julia Implementation: TreeWidthSolver.jl
 
-In this section, I will introduce how the algorithm is implemented in the package [TreeWidthSolver.jl](https://github.com/ArrogantGao/TreeWidthSolver.jl), which is a simple and efficient implementation of the Bouchitté–Todinca algorithm for exact tree width calculation.
+In this section, I will introduce how the algorithm is implemented in the package [TreeWidthSolver.jl](https://github.com/xuanzhaogao/TreeWidthSolver.jl), which is a simple and efficient implementation of the Bouchitté–Todinca algorithm for exact tree width calculation.
 The package in developed using the Julia Programming Language, which is a high performance programming language develop in the past decade.
 For readers who are not familiar with Julia, I recommend this article: [Effective Extensible Programming: Unleashing Julia on GPUs](https://arxiv.org/pdf/1712.03112.pdf), which gives a brief introduction to the language and its features.
 
@@ -459,7 +459,7 @@ julia> elimination_order(g, labels = ['a':'j'...])
 
 We benchmarked the package on a set of random graphs with different sizes, including the 3-regular graph, line graph and random tree graph, and the results are shown below:
 
-![](https://github.com/ArrogantGao/TreeWidthSolver_benchmark/blob/main/figs/time_cost.png?raw=true)
+![](https://github.com/xuanzhaogao/TreeWidthSolver_benchmark/blob/main/figs/time_cost.png?raw=true)
 
 where $n$ is the number of vertices of the graph, $T$ is the time used to calculate the treewidth of the graph.
 Results for the 3-regular graph and random tree graph are averaged over $10$ samples.
@@ -467,7 +467,7 @@ The results show that for different types of graphs, the time used to calculate 
 For simple line/tree graphs, the BT algorithm can reach a polynomial time complexity and calculate the treewidth of the graph in a short time, while for more complex graphs, the time used can be much longer.
 It has been proved that the upper bound of this algorithm is about $O(1.7^n)$.
 
-For more details about the benchmark, please see this repo: [https://github.com/ArrogantGao/TreeWidthSolver_benchmark](https://github.com/ArrogantGao/TreeWidthSolver_benchmark).
+For more details about the benchmark, please see this repo: [https://github.com/xuanzhaogao/TreeWidthSolver_benchmark](https://github.com/xuanzhaogao/TreeWidthSolver_benchmark).
 
 ### Future Work
 

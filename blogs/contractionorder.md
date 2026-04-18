@@ -9,7 +9,7 @@ tags = ["syntax", "code"]
 
 # Tensor Network Contraction Order Optimization with Optimal Tree Decomposition
 
-This blog is a technical note for the [Google Summer of Code 2024](https://summerofcode.withgoogle.com) project ["Tensor network contraction order optimization and visualization"](https://summerofcode.withgoogle.com/programs/2024/projects/B8qSy9dO) released by **The Julia Language**, where I developed a package [TreeWidthSolver.jl](https://github.com/ArrogantGao/TreeWidthSolver.jl) for calculating the tree decomposition with minimal treewidth of a given simple graph and made it a backend of [OMEinsumContracionOrders.jl](https://github.com/TensorBFS/OMEinsumContractionOrders.jl).
+This blog is a technical note for the [Google Summer of Code 2024](https://summerofcode.withgoogle.com) project ["Tensor network contraction order optimization and visualization"](https://summerofcode.withgoogle.com/programs/2024/projects/B8qSy9dO) released by **The Julia Language**, where I developed a package [TreeWidthSolver.jl](https://github.com/xuanzhaogao/TreeWidthSolver.jl) for calculating the tree decomposition with minimal treewidth of a given simple graph and made it a backend of [OMEinsumContracionOrders.jl](https://github.com/TensorBFS/OMEinsumContractionOrders.jl).
 
 This blog covers the following contents:
 1. Contraction order of tensor network
@@ -159,7 +159,7 @@ In our work, we propose to use the tree decomposition of the line graph of the h
 
 Using the language of tensor network, we can rewrite the above theorem as follows: the bottleneck of time complexity of the contraction of a tensor network is $O(e^{O(tw(L(G)))})$, where $L(G)$ is the line graph of the hypergraph representation of the tensor network. 
 Therefore, if we can find the tree decomposition of the tensor network with minimal treewidth, we can find the optimal contraction order of the tensor network.
-We developed a package [TreeWidthSolver.jl](https://github.com/ArrogantGao/TreeWidthSolver.jl) for finding the optimal tree decomposition of a given simple graph, which can be used as a backend of [OMEinsumContractionOrders.jl](https://github.com/TensorBFS/OMEinsumContractionOrders.jl).
+We developed a package [TreeWidthSolver.jl](https://github.com/xuanzhaogao/TreeWidthSolver.jl) for finding the optimal tree decomposition of a given simple graph, which can be used as a backend of [OMEinsumContractionOrders.jl](https://github.com/TensorBFS/OMEinsumContractionOrders.jl).
 For more details about the tree decomposition and its relation to the contraction order, please refer to the appendix.
 
 Here is an example of usage:
@@ -212,10 +212,10 @@ true
 This optimizer will be used as an extension of [TensorOperations.jl](https://github.com/Jutho/TensorOperations.jl) in the future, see this [PR](https://github.com/Jutho/TensorOperations.jl/pull/185).
 We compared the performance of this method against the default optimizer of TensorOperations.jl based on exhaustive searching, the results is shown below.
 
-![](https://github.com/ArrogantGao/TreeWidthSolver_benchmark/blob/main/figs/compare_TO.png?raw=true)
+![](https://github.com/xuanzhaogao/TreeWidthSolver_benchmark/blob/main/figs/compare_TO.png?raw=true)
 
 The results shown that the tree width based solver is faster for some graph similar to trees.
-For more details, please see the benchmark repo: [https://github.com/ArrogantGao/TreeWidthSolver_benchmark](https://github.com/ArrogantGao/TreeWidthSolver_benchmark).
+For more details, please see the benchmark repo: [https://github.com/xuanzhaogao/TreeWidthSolver_benchmark](https://github.com/xuanzhaogao/TreeWidthSolver_benchmark).
 
 ## Appendix: Details about Tree Decomposition and its Relation to Contraction Order
 

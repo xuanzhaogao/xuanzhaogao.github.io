@@ -19,7 +19,7 @@ If you want to know more about me, please visit my [personal website](https://us
 
 3. [Finding the Optimal Tree Decomposition with Minimal Treewidth](/blogs/treewidth/)
 
-    This blog is a supplementary for the note [Tensor Network Contraction Order Optimization with Exact Tree Width Solver](/blogs/contractionorder/), where I detailed introduce the algorithm to find the optimal tree decomposition with minimal treewidth of a given simple graph, and how it is implemented in Julia package [TreeWidthSolver.jl](https://github.com/ArrogantGao/TreeWidthSolver.jl).
+    This blog is a supplementary for the note [Tensor Network Contraction Order Optimization with Exact Tree Width Solver](/blogs/contractionorder/), where I detailed introduce the algorithm to find the optimal tree decomposition with minimal treewidth of a given simple graph, and how it is implemented in Julia package [TreeWidthSolver.jl](https://github.com/xuanzhaogao/TreeWidthSolver.jl).
 
 # Technical Notes
 
